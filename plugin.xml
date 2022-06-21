@@ -16,7 +16,7 @@
                 <param name="android-package" value="com.gmazzoni.cordova.TesseractPlugin"/>
             </feature>
         </config-file>
-        <!-- <asset src="tessdata" target="tessdata" /> -->
+        <asset src="tessdata" target="tessdata" />
         <framework src="com.rmtheis:tess-two:9.0.0" />
         <source-file src="src/android/TesseractPlugin.java" target-dir="src/com/tesseract/phonegap" />
     </platform>
