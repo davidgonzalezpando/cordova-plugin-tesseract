@@ -72,7 +72,8 @@ public class TesseractPlugin extends CordovaPlugin {
 
     public String recognizeText(String imageData, String language) {
         Log.v(TAG, "Starting process to recognize text in photo.");
-
+	return "pepe";
+	/*
         byte[] decodedString = Base64.decode(imageData, Base64.DEFAULT);
         Bitmap bitmap = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 
@@ -93,6 +94,7 @@ public class TesseractPlugin extends CordovaPlugin {
         // You now have the text in recognizedText var, you can do anything with it.
         Log.v(TAG, "Recognized Text: " + recognizedText);
         return recognizedText;
+	*/
     }
 
     public String loadLanguage(String language) {
