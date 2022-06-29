@@ -3,7 +3,7 @@ function TesseractPlugin() {}
 
 // The function that passes work along to native shells
 // Message is a string, duration may be 'long' or 'short'
-TesseractPlugin.prototype.recognizeText = function(language, image, successCallback, errorCallback) {
+TesseractPlugin.prototype.recognizeText = function(image, language, successCallback, errorCallback) {
   var options = {};
   options.image = image;
   options.language = language;
