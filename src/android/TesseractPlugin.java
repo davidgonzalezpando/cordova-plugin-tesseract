@@ -62,7 +62,7 @@ public class TesseractPlugin extends CordovaPlugin {
     }
 
 
-    private void echo(String result, CallbackContext callbackContext) {
+    public void echo(String result, CallbackContext callbackContext) {
         if (result != null && result.length() > 0) {
             callbackContext.success(result);
         } else {
