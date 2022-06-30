@@ -1,6 +1,6 @@
 {
   "name": "plugin-tesseract-david",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a Cordova/Ionic plugin for OCR process using Tesseract library for both Android and iOS. [Tesseract](https://github.com/tesseract-ocr/tesseract) is an Open Source library for OCR (Optical Character Recognition) process.",
   "cordova": {
     "id": "cordova-plugin-tesseract",
