@@ -1,4 +1,4 @@
-package com.gmazzoni.cordova;
+package com.dgp.cordova;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,8 +15,6 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import com.googlecode.tesseract.android.TessBaseAPI;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -28,13 +26,14 @@ import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Base64;
 import android.util.Log;
-
 import android.content.Context;
+
+import com.googlecode.tesseract.android.TessBaseAPI;
 
 public class TesseractPlugin extends CordovaPlugin {
     public static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/OCRFolder/";
     private static final String TAG = "TesseractPlugin";
-    private String lang = "por";
+    private String lang = "eng";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -62,7 +61,7 @@ public class TesseractPlugin extends CordovaPlugin {
     }
 
 
-    private void echo(String result, CallbackContext callbackContext) {
+    public void echo(String result, CallbackContext callbackContext) {
         if (result != null && result.length() > 0) {
             callbackContext.success(result);
         } else {
@@ -72,7 +71,8 @@ public class TesseractPlugin extends CordovaPlugin {
 
     public String recognizeText(String imageData, String language) {
         Log.v(TAG, "Starting process to recognize text in photo.");
-
+	return "pepe";
+	/*
         byte[] decodedString = Base64.decode(imageData, Base64.DEFAULT);
         Bitmap bitmap = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 
@@ -93,6 +93,7 @@ public class TesseractPlugin extends CordovaPlugin {
         // You now have the text in recognizedText var, you can do anything with it.
         Log.v(TAG, "Recognized Text: " + recognizedText);
         return recognizedText;
+	*/
     }
 
     public String loadLanguage(String language) {
