@@ -1,9 +1,9 @@
 {
-  "name": "plugin-tesseract-letsgodigital",
+  "name": "cordova-plugin-tesseract-digits",
   "version": "0.0.1",
   "description": "This is a Cordova/Ionic plugin for OCR process using Tesseract library for both Android and iOS. [Tesseract](https://github.com/tesseract-ocr/tesseract) is an Open Source library for OCR (Optical Character Recognition) process.",
   "cordova": {
-    "id": "plugin-tesseract-letsgodigital",
+    "id": "cordova-plugin-tesseract-digits",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidgonzalezpando/plugin-tesseract-letsgodigital.git"
+    "url": "git+https://github.com/davidgonzalezpando/cordova-plugin-tesseract-digits.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -27,7 +27,7 @@
   "author": "David",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/davidgonzalezpando/plugin-tesseract-letsgodigital/issues"
+    "url": "https://github.com/davidgonzalezpando/cordova-plugin-tesseract-digits/issues"
   },
-  "homepage": "https://github.com/davidgonzalezpando/plugin-tesseract-letsgodigital#readme"
+  "homepage": "https://github.com/davidgonzalezpando/cordova-plugin-tesseract-digits#readme"
 }
