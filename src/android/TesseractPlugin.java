@@ -75,7 +75,8 @@ public class TesseractPlugin extends CordovaPlugin {
         Bitmap bitmap = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 
         Log.v(TAG, "Before baseApi");
-
+	return "test";
+        /*
         TessBaseAPI baseApi = new TessBaseAPI();
         baseApi.setDebug(true);
         baseApi.init(DATA_PATH, language);
